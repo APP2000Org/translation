@@ -14,21 +14,23 @@ function App() {
   return (
     <div className="App">
       <nav style={{ width:'100%', padding:'2rem 0', backgroundColor: 'gray' }}>
+        <button onClick={ ()=> handleClick('no')}>
+          Norsk
+        </button>
         <button onClick={ ()=> handleClick('en')}>
           English
         </button>
         <button onClick={ ()=> handleClick('ko')}>
-          Korean
+          한국어
         </button>
         <button onClick={ ()=> handleClick('chi')}>
-          Chinese
+          中文
         </button>
-
       </nav>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>{t('Thanks.1')}</p>
-        <p>{t('Why.1')}</p>
+        <p>{t('Welcome.1')}</p>
+        <p>{t('Where.1')}</p>
       </header>
     </div>
   );
